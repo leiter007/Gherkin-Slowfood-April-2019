@@ -15,6 +15,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   gem 'pry-byebug'
+  gem 'coveralls', require: false
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
