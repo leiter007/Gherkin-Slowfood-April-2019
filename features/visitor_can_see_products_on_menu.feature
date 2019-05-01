@@ -13,8 +13,8 @@ Feature:  Visitor can see different products on a restaurants menu
         When I visit the landing page
         Then I should see "Hamburger"
         And I should see "Juicy, great meat to bun ratio!"
-        And I should see 199
+        And I should see "199 kr"
         And I should see "Cheeseburger"
         And I should see "Almost as juicy, very tasty!"
-        And I should see 229
+        And I should see "229 kr"
 
