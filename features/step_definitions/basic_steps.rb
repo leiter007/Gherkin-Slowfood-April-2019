@@ -5,11 +5,11 @@ Given("the following products exist") do |table|
 end
   
 When("I visit the landing page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  visit root_path
 end
 
-Then("I should see {string}") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+Then("I should see {string}") do |content|
+  expect(page).to have_content content
 end
 
 Then("I should see {int}") do |int|
