@@ -1,4 +1,11 @@
+%h1 Gherkin Burgers
+
 - @products.each do |product|
 	%h2= product.name
 	%p= product.description
 	%p #{product.price} kr
+
+#categories
+	%ul
+		- @categories.each do |category|
+			%li= category.name
