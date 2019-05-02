@@ -5,9 +5,9 @@ Feature:  Visitor can see different products on a restaurants menu
 
   Background:
     Given the following products exist
-      | name         | description                       | price  |
-      | Hamburger    | Juicy, great meat to bun ratio!   | 199    |
-      | Cheeseburger | Almost as juicy, very tasty!      | 229    |
+    | name         | description                       | price  |
+    | Hamburger    | Juicy, great meat to bun ratio!   | 199    |
+    | Cheeseburger | Almost as juicy, very tasty!      | 229    |
 
   Scenario: Visitor can view products on the landing page
     When I visit the landing page
