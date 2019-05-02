@@ -6,3 +6,6 @@ When ('I click {string} link') do |string|
   click_link string
 end
 
+Then("stop") do
+  binding.pry
+end
