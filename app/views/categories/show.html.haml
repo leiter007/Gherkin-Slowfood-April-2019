@@ -1,7 +1,7 @@
-%h1 test
+%h1= @category.name
 
-%p Find me in app/views/categories/show.html.haml
-
-
-
+- @products.each do |product|
+	%h2= product.name
+	%p= product.description
+	%p #{product.price} kr
 
