@@ -13,7 +13,6 @@ Feature: Visitor can see products sorted in different categories
   Scenario: Visitor can see products in different category tabs, on landing page
     When I visit the landing page
     Then I should see "Burgers"
-    Then stop
     When I click "Burgers" link
     Then I should be on "Burgers" category page
     Then I should see "Hamburger"
