@@ -4,5 +4,5 @@ Given('the following products exist') do |table|
     FactoryBot.create(:product, product
       .except('category')
       .merge(category: product_category))
-  end 
+  end
 end

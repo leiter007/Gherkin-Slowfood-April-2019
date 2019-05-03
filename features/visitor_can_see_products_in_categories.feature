@@ -9,7 +9,7 @@ Feature: Visitor can see products sorted in different categories
     | Hamburger | Juicy, great meat to bun ratio!  | 199    | Burgers  |
     | Coke			| Always Coca Cola      				   | 29    	| Drinks   |
 
-  @javascript  
+  @javascript
   Scenario: Visitor can see products in different category tabs, on landing page
     When I visit the landing page
     Then I should see "Burgers"
