@@ -7,13 +7,14 @@
     = stylesheet_link_tag    'application', media: 'all', data: {'turbolinks-track' => 'reload'}
     = javascript_include_tag 'application', data: {'turbolinks-track' => 'reload'}
   %body
-    #notifications
-      = alert 
-      = notice
     #categories
       %ul
         - @categories.each do |category|
           %li= link_to category.name, category
+    #notifications
+      = alert 
+      = notice
+      = shop_icon_quantity
     = yield
 
 
