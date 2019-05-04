@@ -11,6 +11,7 @@ Feature: Visitor can add to order
     When I visit the landing page
     Then I should see "Burgers"
     When I click "Burgers" link
+    Then stop
     Then I should be on "Burgers" category page
     Then I should see "Hamburger"
 
