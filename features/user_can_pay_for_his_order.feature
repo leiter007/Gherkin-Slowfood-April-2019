@@ -22,3 +22,11 @@ Feature: User can pay for his/her order
     And I fill in "login_password" with "password"
     And I click on "Log in with password"
     Then I should be on the "addresses" step of the checkout
+    And I fill in "addresses_form_billing_first_name" with "Zane"
+    And I fill in "addresses_form_billing_last_name" with "Svensson"
+    And I fill in "addresses_form_billing_address" with "Hornsgatan 56"
+    And I fill in "addresses_form_billing_city" with "Stockholm"
+    And I fill in "addresses_form_billing_zip" with "118 48"
+    Then stop
+    And I select "Sweden" in "addresses_form[billing][country]" drop-down
+    And I fill in "addresses_form_billing_phone" with "+46 707 123 456"

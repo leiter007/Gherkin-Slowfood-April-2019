@@ -17,3 +17,7 @@ end
 When("I click on {string}") do |string|
   click_on string
 end
+
+Then("I select {string} in {string} drop-down") do |selection, selector_id|
+    select selection, from: selector_id
+end
