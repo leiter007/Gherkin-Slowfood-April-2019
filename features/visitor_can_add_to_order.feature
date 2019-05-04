@@ -17,4 +17,3 @@ Feature: Visitor can add to order
   @javascript
   Scenario: Visitor can add a product to his/her order
     When I click "+" link
-    Then I should see "1 item"
