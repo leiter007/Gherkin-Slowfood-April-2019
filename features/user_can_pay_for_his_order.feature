@@ -18,7 +18,7 @@ Feature: User can pay for his/her order
   @javascript
   Scenario: User can succesfully pay for his/her order
     When I click "Proceed to checkout" link
-    And I fill in "Enter Email" with "zane@company.se"
-    And I fill in "Password" with "password"
+    And I fill in "login_email" with "zane@company.se"
+    And I fill in "login_password" with "password"
     And I click on "Log in with password"
     Then I should be on the "addresses" step of the checkout
