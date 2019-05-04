@@ -10,3 +10,11 @@ end
 Then("I should see cart icon equal to {int}") do |int|
   pending # Write code here that turns the phrase above into concrete actions
 end
+
+Then("I should be on the {string} step of the checkout") do |string|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then("stop") do
+  binding.pry
+end
