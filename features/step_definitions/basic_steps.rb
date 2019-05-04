@@ -13,3 +13,7 @@ end
 When("I fill in {string} with {string}") do |field, value|
     fill_in field, with: value
 end
+
+When("I click on {string}") do |string|
+  click_on string
+end
