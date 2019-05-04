@@ -16,5 +16,5 @@ Feature: Visitor can add to order
 
   @javascript
   Scenario: Visitor can add a product to his/her order
-    When I click "Add to cart" link
+    When I click "+" link
     Then I should see cart icon equal to 1
