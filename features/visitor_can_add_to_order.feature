@@ -5,9 +5,9 @@ Feature: Visitor can add to order
 
   Background:
     Given the following products exist
-    | name      | description                      | price  | category |
-    | Hamburger | Juicy, great meat to bun ratio!  | 199    | Burgers  |
-    | Coke			| Always Coca Cola      				   | 29    	| Drinks   |
+    | name      | description                       | price   | category  |
+    | Hamburger | Juicy, great meat to bun ratio!   | 199     | Burgers   |
+    | Coke      | Always Coca Cola                  | 29      | Drinks    |
     When I visit the landing page
     Then I should see "Burgers"
     When I click "Burgers" link
