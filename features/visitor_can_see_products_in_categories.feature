@@ -5,9 +5,9 @@ Feature: Visitor can see products sorted in different categories
 
   Background:
     Given the following products exist
-    | name      | description                      | price  | category |
-    | Hamburger | Juicy, great meat to bun ratio!  | 199    | Burgers  |
-    | Coke			| Always Coca Cola      				   | 29    	| Drinks   |
+    | name      | description                       | price   | category  |
+    | Hamburger | Juicy, great meat to bun ratio!   | 199     | Burgers   |
+    | Coke      | Always Coca Cola                  | 29      | Drinks    |
 
   @javascript
   Scenario: Visitor can see products in different category tabs, on landing page
