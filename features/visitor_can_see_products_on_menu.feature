@@ -17,3 +17,4 @@ Feature:  Visitor can see different products on a restaurants menu
 		And I should see "Cheeseburger"
 		And I should see "Almost as juicy, very tasty!"
 		And I should see "229 kr"
+		
