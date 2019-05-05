@@ -1,7 +1,7 @@
-.nero.pl-5.pt-3.font-sans.text-start.content-center.w-full.fixed
+.nero.pl-5.pt-3.font-sans.text-start.content-center.w-full
   #topwrapper.flex
     #logo
-    %p.text-5xl.no-underline.text-white.font-sans.font-bold Gherkin Burgers
+    %p.text-5xl.text-white.no-underline.font-sans.font-bold=link_to "Gherkin Burgers", root_path
     #cart.pt-3.pl-20
       %p.text-sm.text-white= shop_icon_quantity
       %p.text-s= link_to "Proceed to checkout", cartify.cart_path
