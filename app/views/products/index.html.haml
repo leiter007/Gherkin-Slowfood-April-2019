@@ -1,8 +1,13 @@
 = render "partials/navbar"
 = image_tag "burger.jpg",{class:"bg-fixed"}
 .nero
-
-- @products.each do |product|
-  %h2= product.name
-  %p= product.description
-  %p #{product.price} kr
+- @categories.each do |category|
+  .nero.p-5.text-white.border-b-3.border-white
+    %h1.text-3xl=category.name
+    %div.nero.justify-center
+      - @products.each do |product|
+        .nero.text-white.p-3.mb-2.text-base
+          %h2.text-lg= product.name
+          %p= product.description
+          %p #{product.price} kr
+          %p= add_to_cart(product, 1, "+")
