@@ -1,7 +1,9 @@
-.hero.font-sans.flex.text-center.content-center.w-full
-  %p.no-underline.text-white.font-sans.font-bold.text-3xl.block Gherkin Burgers
-  %p.text-xs.text-yellow Delicious as hell
-              
-         
-             
-   
+.nero.p-2.font-sans.text-start.content-center.w-full
+  #logo
+  %p.text-3xl.no-underline.text-white.font-sans.font-bold Gherkin Burgers
+  #slogan
+  %p.text-sm.text-yellow Delicious as hell
+  #categories.p-1
+  %ul.list-reset.justify-around.items-center.flex.text-center
+    - @categories.each do |category|
+      %li= link_to category.name, category

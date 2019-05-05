@@ -1,11 +1,7 @@
 = render "partials/navbar"
 = image_tag "burger.jpg",{class:"bg-fixed"}
-.hero
-%h1 Gherkin Burgers
-#categories
-  %ul
-    - @categories.each do |category|
-      %li= link_to category.name, category
+.nero
+
 - @products.each do |product|
   %h2= product.name
   %p= product.description
