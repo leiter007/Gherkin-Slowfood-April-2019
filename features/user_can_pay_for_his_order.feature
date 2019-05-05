@@ -27,6 +27,13 @@ Feature: User can pay for his/her order
     And I fill in "addresses_form_billing_address" with "Hornsgatan 56"
     And I fill in "addresses_form_billing_city" with "Stockholm"
     And I fill in "addresses_form_billing_zip" with "118 48"
-    Then stop
     And I select "Sweden" in "addresses_form[billing][country]" drop-down
     And I fill in "addresses_form_billing_phone" with "+46 707 123 456"
+    And I fill in "addresses_form_shipping_first_name" with "Zane"
+    And I fill in "addresses_form_shipping_last_name" with "Svensson"
+    And I fill in "addresses_form_shipping_address" with "Hornsgatan 56"
+    And I fill in "addresses_form_shipping_city" with "Stockholm"
+    And I fill in "addresses_form_shipping_zip" with "118 48"
+    And I select "Sweden" in "addresses_form[shipping][country]" drop-down
+    And I fill in "addresses_form_shipping_phone" with "+46 707 123 456"
+    And I click on "Save and Continue"
