@@ -17,10 +17,10 @@ Feature: Visitor can see products sorted in different categories
     Then I should be on "Burgers" category page
     Then I should see "Hamburger"
     And I should see "Juicy, great meat to bun ratio!"
-    And I should see "199 kr"
+    And I should see "€ 199"
     Then I should see "Drinks"
     When I click "Drinks" link
     Then I should be on "Drinks" category page
     And I should see "Coke"
     And I should see "Always Coca Cola"
-    And I should see "29 kr"
+    And I should see "€ 29"

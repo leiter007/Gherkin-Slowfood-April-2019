@@ -5,15 +5,16 @@ Feature:  Visitor can see different products on a restaurants menu
 
   Background:
     Given the following products exist
-    | name         | description                       | price  |
-    | Hamburger    | Juicy, great meat to bun ratio!   | 199    |
-    | Cheeseburger | Almost as juicy, very tasty!      | 229    |
+    | name         | description                       | price  | category |
+    | Hamburger    | Juicy, great meat to bun ratio!   | 199    | Burgers  |
+    | Cheeseburger | Almost as juicy, very tasty!      | 229    | Burgers  |
 
   Scenario: Visitor can view products on the landing page
     When I visit the landing page
+    And I click on "Burgers"
     Then I should see "Hamburger"
     And I should see "Juicy, great meat to bun ratio!"
-    And I should see "199 kr"
+    And I should see "€ 199"
     And I should see "Cheeseburger"
     And I should see "Almost as juicy, very tasty!"
-    And I should see "229 kr"
+    And I should see "€ 229"
