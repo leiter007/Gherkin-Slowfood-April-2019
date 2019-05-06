@@ -18,7 +18,7 @@ Feature: User can pay for his/her order
   @javascript
   Scenario: User can succesfully pay for his/her order
     When I click "Proceed to checkout" link
-    # And I click "Checkout"
+    And I click on "Checkout"
     And I fill in "login_email" with "zane@company.se"
     And I fill in "login_password" with "password"
     And I click on "Log in with password"
