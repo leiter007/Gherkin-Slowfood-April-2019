@@ -27,8 +27,13 @@
   cursor: auto;
 }
 
-/* .links {
+a {
   text-decoration: none;
-  cursor: auto;
-  color: yellow
-} */
+  color: yellow;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f7b632
+}
+
