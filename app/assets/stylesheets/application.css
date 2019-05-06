@@ -22,4 +22,13 @@
   -o-background-size: contain;
   background-size: contain;
  }
- 
+ a:-webkit-any-link {
+  text-decoration: none;
+  cursor: auto;
+}
+
+/* .links {
+  text-decoration: none;
+  cursor: auto;
+  color: yellow
+} */

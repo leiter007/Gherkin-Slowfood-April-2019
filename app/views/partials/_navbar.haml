@@ -1,15 +1,16 @@
 .nero.pl-5.pt-3.font-sans.text-start.content-center.w-full
   #topwrapper.flex
     #logo
-    %p.text-5xl.text-white.no-underline.font-sans.font-bold=link_to "Gherkin Burgers", root_path
+    %p.text-5xl.text-white.font-sans.font-bold
+      %a=link_to "Gherkin Burgers", root_path
     #cart.pt-3.pl-20
       %p.text-sm.text-white= shop_icon_quantity
       %p.text-s= link_to "Proceed to checkout", cartify.cart_path
   
   #slogan
-  %p.text-xl.text-yellow Delicious as hell
+  %p.text-xl.text-white Delicious as hell
 
   #categories.p-1
-  %ul.no-underline.border-t-2.border-yellow.pt-2.pb-2.border-b-2.border-yellow.list-reset.justify-around.items-center.flex.text-center
+  %ul.border-t-2.border-yellow.pt-2.pb-2.border-b-2.border-yellow.list-reset.justify-around.items-center.flex.text-center
     - @categories.each do |category|
-      %li.no-underline.text-2xl.text-yellow= link_to category.name, category
+      %li.text-2xl.text-yellow= link_to category.name, category

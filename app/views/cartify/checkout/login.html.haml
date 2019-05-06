@@ -1,12 +1,11 @@
-%h3 Custom User Authorization template
-%p (please modify with your own css)
+%h3.pb-3.pt-2 Login or Sign Up to finish your order!
 - if main_app.respond_to?(:user_facebook_omniauth_authorize_path)
     %h3= t('checkout.returning_customer')
     %a{ href: main_app.user_facebook_omniauth_authorize_path }
     %p= t('checkout.or')
 = form_with url:  main_app.user_session_path, scope: :user, local: true do |f|
     %div
-        %p= t('checkout.login_with_password')
+        %p.w-20.bg-grey-lighter.border.border-grey= t('checkout.login_with_password')
         = f.label :email, t('checkout.enter_email'), class: 'control-label input-label', for: :login_email
         = f.email_field :email, placeholder: t('checkout.enter_email'), autofocus: true, id: :login_email
     %div
@@ -22,8 +21,8 @@
         %a{href:  main_app.user_facebook_omniauth_authorize_path}
         %p= t('checkout.or')
 = form_with url:  main_app.user_registration_path, scope: :user, local: true do |f|
-    %div
-        %p= t('checkout.quick_register')
+    %div.pt-4
+        %p.w-20.bg-grey-lighter.border.border-grey= t('checkout.quick_register')
         %p= t('checkout.quick_description')
         = f.label :email, t('checkout.enter_email')
         = f.email_field :email, placeholder: t('checkout.enter_email')
